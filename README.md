@@ -9,7 +9,23 @@ El objetivo es evaluar la carga de la página `https://nuxqa4.avtest.ink/` y sim
 Para ejecutar estas pruebas, es necesario tener el siguiente software instalado:
 
 1.  **Java 8 (o superior):** JMeter está basado en Java. Puedes verificar tu versión en la terminal con `java -version`.
-2.  **Apache JMeter:** Puedes descargarlo desde [jmeter.apache.org](https://jmeter.apache.org/download_jmeter.cgi). Estas pruebas fueron desarrolladas con la versión **[AQUÍ_PONES_TU_VERSIÓN_DE_JMETER, EJ: 5.6.3]**.
+2.  **Apache JMeter:** Puedes descargarlo desde [jmeter.apache.org](https://jmeter.apache.org/download_jmeter.cgi). Estas pruebas fueron desarrolladas con la versión **[ 5.6.3]**.
+
+## Plugins Requeridos
+
+Este plan de pruebas utiliza componentes que no vienen en la instalación estándar de JMeter. Es necesario instalar los siguientes plugins:
+
+1.  **JMeter Plugins Manager:** Es el instalador de plugins.
+    * Descarga el archivo `plugins-manager.jar` desde `jmeter-plugins.org`.
+    * Cópialo dentro de la carpeta `lib/ext` de tu instalación de JMeter.
+    * Reinicia JMeter.
+
+2.  **Stepping Thread Group:**
+    * Una vez reiniciado JMeter, ve a `Options > Plugins Manager`.
+    * En la pestaña `Available Plugins`, busca e instala **`jpgc-Stepping Thread Group`**.
+    * JMeter se reiniciará de nuevo.
+
+Ahora el plan de pruebas se podrá ejecutar correctamente.
 
 ## Configuración del Entorno
 
